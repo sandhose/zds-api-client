@@ -1,5 +1,9 @@
 # zds-api-client
 
+[![NPM Package](https://nodei.co/npm/zds-api-client.png?compact=true)](https://www.npmjs.com/package/zds-api-client)
+
+[![Coverage Status](https://coveralls.io/repos/sandhose/zds-api-client/badge.svg)](https://coveralls.io/r/sandhose/zds-api-client) [![Build Status](https://travis-ci.org/sandhose/zds-api-client.svg?branch=master)](https://travis-ci.org/sandhose/zds-api-client)
+
 Client Javacript pour l'API de [Zeste de Savoir](http://zestedesavoir.com/). Fonctionne avec Node.js, et dans le navigateur via browserify/webpack.
 
 ## Utilisation
