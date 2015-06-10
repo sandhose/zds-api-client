@@ -14,7 +14,7 @@ function requireAPI(filename) {
             return Object.freeze(ep);
         }
         catch(e) {
-            throw new Error(util.format("Unable to load endpoint %s: %s", filename, e.message);
+            throw new Error(util.format("Unable to load endpoint %s: %s", filename, e.message));
         }
     }
 }
@@ -26,7 +26,7 @@ function requireAPI(filename) {
  */
 var APIs = {
     "membres": requireAPI("membres"),
-    "mps": requireAPI("mps")
+    //"mps": requireAPI("mps")
 };
 
 /**
