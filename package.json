@@ -1,8 +1,12 @@
 {
   "name": "zds-api-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zeste de Savoir API Client",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandhose/zds-api-client.git"
+  },
   "scripts": {
     "test": "jasmine"
   },
