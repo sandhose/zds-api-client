@@ -10,5 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "request": "^2.57.0"
+  },
+  "devDependencies": {
+    "nock": "^2.4.1"
   }
 }
