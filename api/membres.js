@@ -63,7 +63,7 @@ function Membres(options) {
                 method: "POST"
             },
             params: params,
-            requiredParams: ["username",  "email", "password"],
+            requiredParams: [],
             pathParams: []
         };
 
