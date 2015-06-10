@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "jasmine",
-    "test-coveralls": "istanbul cover jasmine && coveralls"
+    "test-coveralls": "istanbul cover jasmine && cat ./coverage/lcov.info | coveralls"
   },
   "author": "Sandhose <quentingliech@gmail.com>",
   "license": "MIT",
