@@ -1,4 +1,4 @@
-
+var urls = require("./lib/urls");
 var apis = require("./api");
 var OAuth2 = require("./lib/OAuth2");
 
@@ -9,13 +9,14 @@ var ZDSAPIClient = function() {
 
     this.auth = {};
     this.auth.OAuth2 = OAuth2;
+    this.urls = urls();
 
     global.zds_config = global.zds_config || {};
 };
 
 ZDSAPIClient.prototype = {
     setBaseURL: function(baseURL) {
-        global.ZDS_BASE_URL = baseURL;
+        this.urls = urls(baseURL);
     }
 }
 

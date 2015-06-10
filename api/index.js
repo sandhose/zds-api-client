@@ -9,6 +9,8 @@ var util = require("util");
 function requireAPI(filename) {
     return function(options) {
         try {
+            options = options || {};
+            options.urls = this.urls;
             var Endpoint = require("./" + filename);
             var ep = new Endpoint(options);
             return Object.freeze(ep);

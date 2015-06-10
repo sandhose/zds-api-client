@@ -3,7 +3,7 @@ var createAPIRequest = require("../lib/apirequest");
 
 function Membres(options) {
     var self = this;
-    this.api_url = urls().API_ROOT + "/membres";
+    this.api_url = options.urls.API_ROOT + "/membres";
 
     this.monProfil = function(params, callback) {
         var parameters = {

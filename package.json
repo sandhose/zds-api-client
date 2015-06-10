@@ -6,11 +6,11 @@
   "scripts": {
     "test": "jasmine"
   },
-  "author": "Sandhose",
+  "author": "Sandhose <quentingliech@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "request": "^2.57.0",
-    "string-template": "^0.2.1"
+    "string-template": "^0.2.1",
+    "superagent": "^1.2.0"
   },
   "devDependencies": {
     "nock": "^2.4.1"
