@@ -1,3 +1,4 @@
+var debug = require("debug")("zds-api:membres");
 var urls = require("../lib/urls");
 var createAPIRequest = require("../lib/apirequest");
 
@@ -6,6 +7,7 @@ function Membres(options) {
     this.api_url = options.urls.API_ROOT + "/membres";
 
     this.monProfil = function(params, callback) {
+        debug("called #monProfil");
         var parameters = {
             options: {
                 url: this.api_url + "/mon-profil/",
@@ -20,6 +22,7 @@ function Membres(options) {
     };
 
     this.list = function(params, callback) {
+        debug("called #list");
         var parameters = {
             options: {
                 url: this.api_url + "/",
@@ -34,6 +37,7 @@ function Membres(options) {
     };
 
     this.get = function(params, callback) {
+        debug("called #get");
         if(typeof params === "string") {
             params = { pk: params };
         }
@@ -52,6 +56,7 @@ function Membres(options) {
     };
 
     this.create = function(params, callback) {
+        debug("called #create");
         var parameters = {
             options: {
                 url: this.api_url + "/",
@@ -66,6 +71,7 @@ function Membres(options) {
     };
 
     this.update = function(params, callback) {
+        debug("called #update");
         var parameters = {
             options: {
                 url: this.api_url + "/{pk}/",
@@ -83,6 +89,7 @@ function Membres(options) {
         return {
             lectureSeule: {
                 set: function(params, callback) {
+                    debug("called #lectureSeule.set");
                     params.pk = pk;
                     var parameters = {
                         options: {
@@ -97,6 +104,7 @@ function Membres(options) {
                     return createAPIRequest(parameters, callback);
                 },
                 unset: function(params, callback) {
+                    debug("called #lectureSeule.unset");
                     params.pk = pk;
                     var parameters = {
                         options: {
@@ -113,6 +121,7 @@ function Membres(options) {
             },
             ban: {
                 set: function(params, callback) {
+                    debug("called #ban.set");
                     params.pk = pk;
                     var parameters = {
                         options: {
@@ -127,6 +136,7 @@ function Membres(options) {
                     return createAPIRequest(parameters, callback);
                 },
                 unset: function(params, callback) {
+                    debug("called #ban.unset");
                     params.pk = pk;
                     var parameters = {
                         options: {

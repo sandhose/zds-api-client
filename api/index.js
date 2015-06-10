@@ -1,3 +1,4 @@
+var debug = require("debug")("zds-api:api-index");
 var util = require("util");
 
 /**
@@ -7,7 +8,9 @@ var util = require("util");
  * @private
  */
 function requireAPI(filename) {
+    debug("wrapping api %s", filename);
     return function(options) {
+        debug("getting api %s", filename);
         try {
             options = options || {};
             options.urls = this.urls;
